@@ -7,13 +7,16 @@
 //
 
 #import "TweeeAppDelegate.h"
+#import "TweeeStatusItemController.h"
 
 @implementation TweeeAppDelegate
 
 @synthesize window;
+@synthesize statusItemController;
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
 	// Insert code here to initialize your application 
+	statusItemController = [[TweeeStatusItemController alloc] init];
 }
 
 @end

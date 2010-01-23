@@ -9,11 +9,14 @@
 #import <Cocoa/Cocoa.h>
 
 @class TweetsWindow;
+@class TweeeStatusItemController;
 
 @interface TweeeAppDelegate : NSObject <NSApplicationDelegate> {
     TweetsWindow *window;
+	TweeeStatusItemController *statusItemController;
 }
 
 @property (assign) IBOutlet TweetsWindow *window;
+@property (readonly) TweeeStatusItemController *statusItemController;
 
 @end
