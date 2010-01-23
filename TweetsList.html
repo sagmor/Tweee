@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="jquery" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
+		<script type="text/javascript" charset="utf-8">
+			jQuery.getJSON('http://twitter.com/statuses/public_timeline.json', function(data,textStatus) {
+				jQuery.each(data, function(i,tweet) {
+					$('#tweets').append('<li><img src="'+tweet.user.profile_image_url+'" />'+tweet.text+'</li>');
+				});
+			});
+		</script>
+	</head>
+	<body>
+		
+		<ul id="tweets"></ul>
+	</body>
+</html>
