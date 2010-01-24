@@ -10,9 +10,14 @@
 
 
 @interface TweeeMenuViewController : NSViewController {
-
+	NSView *mainView;
+	NSView *optionsView;
 }
 
+@property(retain,nonatomic) IBOutlet NSView *mainView;
+@property(retain,nonatomic) IBOutlet NSView *optionsView;
+
 - (IBAction)exitTweee:(id)sender;
+- (IBAction)toggleView:(id)sender;
 
 @end

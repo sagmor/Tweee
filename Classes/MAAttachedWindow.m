@@ -935,5 +935,17 @@
     }
 }
 
+- (void)setView:(NSView *)view
+{
+	//[CATransaction begin]; {
+	//[CATransaction setAnimationDuration:1.0f];
+	
+	[[[self contentView] animator] replaceSubview:_view with:view];
+	_view = view;
+	[self _updateGeometry];
+	
+	//} [CATransaction commit];
+}
+
 
 @end
