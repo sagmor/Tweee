@@ -25,7 +25,7 @@
 		[statusItem setView:[TweeeStatusItemView viewWithController:self]];
 		[statusItem setEnabled:YES];
 		
-		menuViewController = [[TweeeMenuViewController alloc] initWithNibName:nil bundle:nil];
+		menuViewController = [[TweeeMenuViewController alloc] initWithNibName:@"TweeeMenuView" bundle:nil];
 	}
 	return self;
 }

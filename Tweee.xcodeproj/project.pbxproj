@@ -21,8 +21,8 @@
 		CE8184D6110B7D950066C162 /* MAAttachedWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CE8184D5110B7D950066C162 /* MAAttachedWindow.m */; };
 		CE81851A110B8DD70066C162 /* TweetsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE818519110B8DD70066C162 /* TweetsView.xib */; };
 		CE818525110B9AB50066C162 /* settings.tif in Resources */ = {isa = PBXBuildFile; fileRef = CE818524110B9AB50066C162 /* settings.tif */; };
-		CE81863F110BAB230066C162 /* TweeeMenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE81863E110BAB230066C162 /* TweeeMenuViewController.xib */; };
 		CE81867E110BF8090066C162 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE81867D110BF8090066C162 /* QuartzCore.framework */; };
+		CE8186D7110C87170066C162 /* TweeeMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CE8186D6110C87170066C162 /* TweeeMenuView.xib */; };
 		CED210B8110A840200B46F76 /* TweetsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CED210B7110A840200B46F76 /* TweetsViewController.m */; };
 		CED210BB110A840D00B46F76 /* TweetsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CED210BA110A840D00B46F76 /* TweetsView.m */; };
 		CED210C2110A873A00B46F76 /* TweetsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CED210C1110A873A00B46F76 /* TweetsWindow.m */; };
@@ -58,7 +58,7 @@
 		CE8184D4110B7D950066C162 /* MAAttachedWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAAttachedWindow.h; sourceTree = "<group>"; };
 		CE8184D5110B7D950066C162 /* MAAttachedWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAAttachedWindow.m; sourceTree = "<group>"; };
 		CE818524110B9AB50066C162 /* settings.tif */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = settings.tif; sourceTree = "<group>"; };
-		CE81863E110BAB230066C162 /* TweeeMenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TweeeMenuViewController.xib; sourceTree = "<group>"; };
+		CE81863E110BAB230066C162 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/TweeeMenuView.xib; sourceTree = "<group>"; };
 		CE81867D110BF8090066C162 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CED210B6110A840200B46F76 /* TweetsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TweetsViewController.h; sourceTree = "<group>"; };
 		CED210B7110A840200B46F76 /* TweetsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TweetsViewController.m; sourceTree = "<group>"; };
@@ -175,7 +175,7 @@
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
 				CE818519110B8DD70066C162 /* TweetsView.xib */,
-				CE81863E110BAB230066C162 /* TweeeMenuViewController.xib */,
+				CE8186D6110C87170066C162 /* TweeeMenuView.xib */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -252,7 +252,7 @@
 				CE818479110B70F70066C162 /* app.icns in Resources */,
 				CE81847A110B70F70066C162 /* menubar.tif in Resources */,
 				CE818525110B9AB50066C162 /* settings.tif in Resources */,
-				CE81863F110BAB230066C162 /* TweeeMenuViewController.xib in Resources */,
+				CE8186D7110C87170066C162 /* TweeeMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +301,14 @@
 				CED210BC110A843100B46F76 /* English */,
 			);
 			name = TweetsView.xib;
+			sourceTree = "<group>";
+		};
+		CE8186D6110C87170066C162 /* TweeeMenuView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CE81863E110BAB230066C162 /* English */,
+			);
+			name = TweeeMenuView.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
